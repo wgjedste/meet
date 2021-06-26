@@ -5,17 +5,10 @@ import CitySearch from "./CitySearch";
 import NumberOfEvents from "./NumberOfEvents";
 import { getEvents, extractLocations } from "./api";
 import { WarningAlert } from "./Alert";
-import { OfflineAlert } from './Alert';
 import "./nprogress.css";
 import {
-  ScatterChart,
-  Scatter,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
+  ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
+} from 'recharts';
 import EventGenre from "./EventGenre";
 
 class App extends Component {
@@ -40,20 +33,13 @@ class App extends Component {
       }
 
       if (!navigator.onLine) {
-        if (!navigator.onLine) {
-          this.setState({
-            offlinealert: 'Cached data is being displayed.'
-          })
-        }
-        else {
-          this.setState({
-            warningText: ''
-          })
-        }
+        this.setState({
+          infoText:
+            "You are currently offline.  The list of events may not be up-to-date.",
+        });
       }
     });
   }
-
 
   componentWillUnmount() {
     this.mounted = false;
@@ -125,11 +111,10 @@ class App extends Component {
               <XAxis type="category" dataKey="city" name="city" />
               <YAxis type="number" dataKey="number" name="number of events" />
               <Tooltip cursor={{ strokeDasharray: "3 3" }} />
-              <Scatter data={this.getData()} fill="#530d78" />
+              <Scatter data={this.getData()} fill="#8884d8" />
             </ScatterChart>
           </ResponsiveContainer>
         </div>
-        <OfflineAlert text={this.state.offlinealert} />
         <EventList events={this.state.events} />
       </div>
     );

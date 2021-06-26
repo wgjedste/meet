@@ -77,6 +77,7 @@ input[type="number"] {
 }
 
 .event {
+  font-family: Arial, Helvetica, sans-serif;
   padding: 10px 10px 35px;
   margin-bottom: 10px;
   text-align: left;
@@ -197,6 +198,8 @@ input[type="number"] {
   letter-spacing: 0.2px;
   font-family: "Roboto";
 }
+
+
 
 @media only screen and (min-width: 992px) {
   .data-vis-wrapper {
