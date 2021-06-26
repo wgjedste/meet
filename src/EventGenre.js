@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import { PieChart, Pie, ResponsiveContainer, Cell, Legend } from "recharts";
 
@@ -51,9 +52,9 @@ const EventGenre = ({ events }) => {
           cx="50%"
           cy="45%"
           labelLine={false}
-          paddingAngle={8}
+          // paddingAngle={8}
           label={({ percent }) => `${(percent * 100).toFixed(0)}%`}
-          innerRadius={65}
+          // innerRadius={65}
           outerRadius={100}
           fill="red"
           dataKey="value"
