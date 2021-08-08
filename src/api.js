@@ -124,4 +124,3 @@ const getToken = async (code) => {
 
   return access_token;
 };
-
