@@ -1,4 +1,4 @@
-# meet<!-- Meet App
+# meet
 
 Objective
 To build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
@@ -43,5 +43,5 @@ FEATURE 5: DATA VISUALIZATION
 
 User Story:As a user, I should be able to visualize the events that are upcoming across cities So that I can decide which cities I want to explore further
 
-Scenario 1: Show a chart with the number of upcoming events in each city. Given the user hasn’t searched for a particular city When the user navigates to the “events by city” view Then the user should see a chart with the number of upcoming events in each city -->
+Scenario 1: Show a chart with the number of upcoming events in each city. Given the user hasn’t searched for a particular city When the user navigates to the “events by city” view Then the user should see a chart with the number of upcoming events in each city
 
