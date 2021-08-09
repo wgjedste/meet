@@ -94,4 +94,4 @@ Given the user has inputted their city
 When the user clicks on a chart
 Then the user should see a chart displaying the number of events in that city and be
 able to click on other cities to see their charts as well
-# meet-app
+
